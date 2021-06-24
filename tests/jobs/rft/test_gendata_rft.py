@@ -429,6 +429,7 @@ def test_defaults():
     assert directory_job_default == _build_parser().get_default("outputdirectory")
 
 
+@pytest.mark.ert_integration
 @pytest.mark.skipif(
     sys.platform == "darwin",
     reason=(
@@ -531,6 +532,7 @@ GEN_DATA OP_1_RFT_SIM1 INPUT_FORMAT:ASCII REPORT_STEPS:1 RESULT_FILE:RFT_OP_1_%d
     assert result.returncode == 0
 
 
+@pytest.mark.ert_integration
 @pytest.mark.skipif(
     sys.platform == "darwin",
     reason=(
