@@ -1,8 +1,8 @@
 # pylint: disable=unsubscriptable-object  # pylint issue
-import sys
 import os
-import subprocess
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 import pandas as pd
